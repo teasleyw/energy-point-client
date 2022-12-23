@@ -16,3 +16,18 @@ code {
   font-family: 'Vogue';
   src: local("Vogue"), url("./Assets/Fonts/Vogue/Vogue.ttf") format("truetype")
 }
+body {
+  margin: 0;
+  font-family: Ford-Antenna-Regular, serif !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: auto;
+  height: 100%;
+}
+
+html {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}

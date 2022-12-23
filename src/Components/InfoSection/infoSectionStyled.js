@@ -1,7 +1,8 @@
 import styled from 'styled-components';
+import {primaryDark, primaryLight} from "../../AppStyled";
 
 export const InfoSectionContainer = styled.div`
-    background-color: ${props => props.inverse ? 'black' : 'white'};
+    background-color: ${props => props.inverse ? primaryDark : primaryLight};
     color: ${props => props.inverse ? 'white' : 'black'};
     height: 50vh;
     width: 100%;
@@ -9,11 +10,8 @@ export const InfoSectionContainer = styled.div`
     flex-direction: row;
 `
 export const InfoSectionOne = styled.div`
-    font-family: Vogue,serif;
-    font-size: 3rem;
     width: 50%;
     order: ${props => props.inverse ? 0 : 1};
-    align-self: center;
 `
 export const InfoSectionTwo = styled.div`
     width: 50%;

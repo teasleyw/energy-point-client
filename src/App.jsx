@@ -3,16 +3,13 @@ import './App.css';
 import HeroSection from "./Components/HeroSection/HeroSection";
 import Header from "./Components/Header/Header";
 import InfoSection from "./Components/InfoSection/infoSection";
-import {ContactContainer, Input, InputContainer, Label, TextArea} from "./AppStyled";
+import {ContactContainer, ImageContainer, Input, InputContainer, Label, TextArea} from "./AppStyled";
 
 function App() {
     const contactSectionText =
         <>
             <div>
                 Contact us for a quote:
-            </div>
-            <div>
-                (include image of electric receipt for a estimation)
             </div>
         </>
     const contactSectionInput =
@@ -32,12 +29,16 @@ function App() {
                 </InputContainer>
             </ContactContainer>
         </>
+    const AboutUsSection =
+        <>
+            <ImageContainer/>
+        </>
   return (
     <div className="App">
         <Header/>
       <HeroSection/>
         <InfoSection inverse={true} sectionOne={contactSectionText} sectionTwo={contactSectionInput}/>
-        <InfoSection inverse={false}/>
+        <InfoSection inverse={false} sectionTwo={AboutUsSection} sectionOne={contactSectionInput}/>
 
 
     </div>
