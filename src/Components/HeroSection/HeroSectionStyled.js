@@ -2,13 +2,13 @@ import styled from 'styled-components';
 import heroImage from "../../Assets/Images/SolarPanelHeroImage.jpg"
 
 export const HeroSectionContainer = styled.div`
-    width: 100vw;
-    height: 75vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${heroImage});
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+  width: 100vw;
+  height: 75vh;
+  background-image: linear-gradient(90deg, rgb(58, 65, 111), rgba(58, 65, 111, 0.5)), url(${heroImage});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
   @media screen and (max-width: 960px) {
     width: 100vw;
     height: 25vh;

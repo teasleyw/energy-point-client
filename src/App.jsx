@@ -4,8 +4,11 @@ import HeroSection from "./Components/HeroSection/HeroSection";
 import Header from "./Components/Header/Header";
 import InfoSection from "./Components/InfoSection/infoSection";
 import {ContactContainer, ImageContainer, Input, InputContainer, Label, TextArea} from "./AppStyled";
+import React from "react";
+import AboutUsSection from "./Components/AboutUsSection/AboutUsSection";
 
 function App() {
+
     const contactSectionText =
         <>
             <div>
@@ -29,16 +32,14 @@ function App() {
                 </InputContainer>
             </ContactContainer>
         </>
-    const AboutUsSection =
-        <>
-            <ImageContainer/>
-        </>
+
   return (
     <div className="App">
         <Header/>
       <HeroSection/>
         <InfoSection inverse={true} sectionOne={contactSectionText} sectionTwo={contactSectionInput}/>
-        <InfoSection inverse={false} sectionTwo={AboutUsSection} sectionOne={contactSectionInput}/>
+        <InfoSection inverse={false} sectionTwo={<AboutUsSection/>} sectionOne={contactSectionInput}/>
+
 
 
     </div>

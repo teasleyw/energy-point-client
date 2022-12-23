@@ -15,15 +15,6 @@ export const ContactContainer = styled.div`
     gap: 2vh;
     height: 100%;
 `
-export const ImageContainer = styled.div`
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    
-    width:100%;
-    height: 50vh;
-    background-image: url(${Logo});
-`
 export const InputContainer = styled.div`
     padding-top: 10px;
     padding-bottom: 10px;

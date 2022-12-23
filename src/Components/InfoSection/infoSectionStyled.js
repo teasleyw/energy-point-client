@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import {primaryDark, primaryLight} from "../../AppStyled";
+import {primaryDark, primaryLight, secondaryLight} from "../../AppStyled";
 
 export const InfoSectionContainer = styled.div`
-    background-color: ${props => props.inverse ? primaryDark : primaryLight};
+    background-color: ${props => props.inverse ? primaryDark : secondaryLight};
     color: ${props => props.inverse ? 'white' : 'black'};
     height: 50vh;
     width: 100%;
