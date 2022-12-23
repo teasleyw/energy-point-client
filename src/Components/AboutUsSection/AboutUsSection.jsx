@@ -16,7 +16,7 @@ const AboutUsSection = () => {
     }, []);
     return(
         <>
-            <ImageContainer ref={documentRef} animate={isVisible} className={`${isVisible ? "fade" : ""}`}/>
+            <ImageContainer ref={documentRef} animate={isVisible}/>
         </>
     )
 }
