@@ -3,9 +3,10 @@ import './App.css';
 import HeroSection from "./Components/HeroSection/HeroSection";
 import Header from "./Components/Header/Header";
 import InfoSection from "./Components/InfoSection/infoSection";
-import {ContactContainer, ImageContainer, Input, InputContainer, Label, TextArea} from "./AppStyled";
+import {AboutUsTitle, ContactContainer, ImageContainer, Input, InputContainer, Label, TextArea} from "./AppStyled";
 import React from "react";
 import AboutUsSection from "./Components/AboutUsSection/AboutUsSection";
+import Accordion from "./Components/Accordion/Accordion";
 
 function App() {
 
@@ -32,13 +33,27 @@ function App() {
                 </InputContainer>
             </ContactContainer>
         </>
+    const AboutUsText =
+        <>
+            <AboutUsTitle>
+                About Us
+            </AboutUsTitle>
+        </>
+    const accordionSection =
+        <>
+            <Accordion title={"Installation"} content={contactSectionInput}/>
+            <Accordion title={"Installation"} content={contactSectionInput}/>
+            <Accordion title={"Installation"} content={contactSectionInput}/>
+            <Accordion title={"Installation"} content={contactSectionInput}/>
+        </>
 
   return (
     <div className="App">
         <Header/>
       <HeroSection/>
+        <InfoSection inverse={true} sectionOne={accordionSection} sectionTwo={AboutUsText}/>
         <InfoSection inverse={true} sectionOne={contactSectionText} sectionTwo={contactSectionInput}/>
-        <InfoSection inverse={false} sectionTwo={<AboutUsSection/>} sectionOne={contactSectionInput}/>
+        <InfoSection inverse={false} sectionTwo={<AboutUsSection/>} sectionOne={AboutUsText}/>
 
 
 

@@ -30,6 +30,13 @@ export const InputContainer = styled.div`
   
   
 `
+export const AboutUsTitle = styled.div`
+    font-size: 60px;
+    font-weight: 500;
+    border-bottom: ${websiteBlack} 1px solid;
+    margin-right: 40px;
+    
+`
 
 export const Input = styled.input`
   color: ${websiteBlack};

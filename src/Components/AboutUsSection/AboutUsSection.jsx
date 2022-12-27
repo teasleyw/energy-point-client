@@ -6,17 +6,21 @@ const AboutUsSection = () => {
     const documentRef = useRef();
 
     useEffect(() => {
-        console.log(1);
         const observer = new IntersectionObserver(enteries => {
             enteries.forEach(entry => {
-                setVisible(entry.isIntersecting);
+                if(entry.isIntersecting ){
+                    setVisible(true)
+                    observer.unobserve(documentRef.current)
+                }
             });
         });
         observer.observe(documentRef.current);
+        return () => observer.disconnect()
     }, []);
     return(
         <>
             <ImageContainer ref={documentRef} animate={isVisible}/>
+
         </>
     )
 }
