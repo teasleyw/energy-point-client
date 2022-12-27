@@ -1,5 +1,6 @@
 import {useState} from "react";
 import "./Accordion.css"
+import {AccordionContainer, AccordionContent, AccordionDetails} from "./AccordionStyled";
 
 const Accordion = (
     {
@@ -15,24 +16,24 @@ const Accordion = (
 
     const [toggleAccordion,setToggleAccordion] = useState(false)
     return(
-        <div className={"mobile-accordion" + classNameString} onClick={() => setToggleAccordion(!toggleAccordion)}>
-            <div className={`mobile-accordion-content ${toggleAccordion ? "active" : ""}`}>
+        <AccordionContainer className={classNameString} onClick={() => setToggleAccordion(!toggleAccordion)}>
+            <AccordionContent className={`${toggleAccordion ? "active" : ""}`}>
                 {title}
                 { !toggleAccordion &&
-                    <div className="mobile-accordion-plus">
+                    <div>
                         +
                     </div>
                 }
                 { toggleAccordion &&
-                    <div className="mobile-accordion-minus">
+                    <div>
                         -
                     </div>
                 }
-            </div>
-            <div className={`mobile-accordion-details ${toggleAccordion ? "active" : ""}`}>
+            </AccordionContent>
+            <AccordionDetails className={`${toggleAccordion ? "active" : ""}`}>
                 {content}
-            </div>
-        </div>
+            </AccordionDetails>
+        </AccordionContainer>
     )
 }
 export default Accordion

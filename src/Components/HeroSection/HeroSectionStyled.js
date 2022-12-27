@@ -27,4 +27,8 @@ export const HeroSectionText = styled.div`
     color: white;
     font-family: Vogue,serif;
     font-size: 5rem;
+    transition: all 1s ease-in-out;
+    transform: translateX(${props => (props.animate ? '0' : '-50vh')});
+    opacity: ${props => props.animate ? '100%' : '0'}
+  
 `

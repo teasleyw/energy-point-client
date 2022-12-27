@@ -20,7 +20,6 @@ const AboutUsSection = () => {
     return(
         <>
             <ImageContainer ref={documentRef} animate={isVisible}/>
-
         </>
     )
 }

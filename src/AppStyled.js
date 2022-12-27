@@ -6,7 +6,13 @@ export const primaryLight = "#5d83C0"
 export const secondaryLight = "#10A3A2"
 export const tertiaryLight = "#B0B3B1"
 export const websiteBlack = "#111311"
-
+export const AccordionSection = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 50px;
+    padding-right: 25px;
+`
 export const ContactContainer = styled.div`
     display: flex;
     flex-direction: column;
@@ -30,12 +36,19 @@ export const InputContainer = styled.div`
   
   
 `
+export const AboutUsContainer = styled.div`
+    padding-left: 25px;
+    padding-right: 25px;
+`
 export const AboutUsTitle = styled.div`
     font-size: 60px;
     font-weight: 500;
     border-bottom: ${websiteBlack} 1px solid;
-    margin-right: 40px;
-    
+`
+export const AboutUsDetails = styled.div`
+    font-size: 25px;
+    font-weight: 400;
+  
 `
 
 export const Input = styled.input`

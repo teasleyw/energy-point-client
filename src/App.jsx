@@ -1,9 +1,20 @@
-
 import './App.css';
 import HeroSection from "./Components/HeroSection/HeroSection";
 import Header from "./Components/Header/Header";
 import InfoSection from "./Components/InfoSection/infoSection";
-import {AboutUsTitle, ContactContainer, ImageContainer, Input, InputContainer, Label, TextArea} from "./AppStyled";
+import {loremIpsum} from "./constants/constants";
+import {
+    AboutUsContainer,
+    AboutUsDetails,
+    AboutUsTitle,
+    AccordionSection,
+    ContactContainer,
+    ImageContainer,
+    Input,
+    InputContainer,
+    Label,
+    TextArea
+} from "./AppStyled";
 import React from "react";
 import AboutUsSection from "./Components/AboutUsSection/AboutUsSection";
 import Accordion from "./Components/Accordion/Accordion";
@@ -34,29 +45,29 @@ function App() {
             </ContactContainer>
         </>
     const AboutUsText =
-        <>
+        <AboutUsContainer>
             <AboutUsTitle>
                 About Us
             </AboutUsTitle>
-        </>
+            <AboutUsDetails>
+                {loremIpsum}
+            </AboutUsDetails>
+        </AboutUsContainer>
     const accordionSection =
-        <>
-            <Accordion title={"Installation"} content={contactSectionInput}/>
-            <Accordion title={"Installation"} content={contactSectionInput}/>
-            <Accordion title={"Installation"} content={contactSectionInput}/>
-            <Accordion title={"Installation"} content={contactSectionInput}/>
-        </>
+        <AccordionSection>
+            <Accordion title={"Installation"} content={loremIpsum}/>
+            <Accordion title={"Services"} content={loremIpsum}/>
+            <Accordion title={"History"} content={loremIpsum}/>
+            <Accordion title={"Leadership"} content={contactSectionInput}/>
+        </AccordionSection>
 
   return (
     <div className="App">
         <Header/>
-      <HeroSection/>
+        <HeroSection/>
         <InfoSection inverse={true} sectionOne={accordionSection} sectionTwo={AboutUsText}/>
         <InfoSection inverse={true} sectionOne={contactSectionText} sectionTwo={contactSectionInput}/>
         <InfoSection inverse={false} sectionTwo={<AboutUsSection/>} sectionOne={AboutUsText}/>
-
-
-
     </div>
 
   );

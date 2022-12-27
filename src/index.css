@@ -16,6 +16,10 @@ code {
   font-family: 'Vogue';
   src: local("Vogue"), url("./Assets/Fonts/Vogue/Vogue.ttf") format("truetype")
 }
+@font-face {
+  font-family: 'Coolvetica';
+  src: local("CoolVetica"), url("./Assets/Fonts/coolvetica/coolvetica-rg.otf") format("truetype")
+}
 body {
   margin: 0;
   font-family: Ford-Antenna-Regular, serif !important;
