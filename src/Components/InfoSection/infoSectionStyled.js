@@ -6,7 +6,7 @@ export const InfoSectionContainer = styled.div`
     color: ${props => props.inverse ? 'white' : 'black'};
     min-height: 50vh;
     padding-top: 20px;
-    z-index: 999;
+    z-index: 998;
     position: relative;
     padding-bottom: 20px;
     width: 100%;

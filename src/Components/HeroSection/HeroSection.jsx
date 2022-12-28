@@ -1,5 +1,11 @@
 import React, {useEffect, useRef, useState} from 'react';
-import {HeroSectionContainer, HeroSectionImageContainer, HeroSectionText, HeroSectionTextContainer} from "./HeroSectionStyled";
+import {
+    HeroSectionContainer,
+    HeroSectionContentContainer,
+    HeroSectionImageContainer,
+    HeroSectionText,
+    HeroSectionTextContainer
+} from "./HeroSectionStyled";
 
 const HeroSection =() =>{
     const [isVisible, setVisible] = useState(false);
@@ -19,12 +25,12 @@ const HeroSection =() =>{
     }, );
     return (
         <HeroSectionContainer id={"hero-section-id"}>
+            <HeroSectionContentContainer>
             <HeroSectionImageContainer  ref={documentRef} animate={isVisible} />
-            <HeroSectionTextContainer>
                 <HeroSectionText ref={documentRef} animate={isVisible}>
                     Venta e instalación de paneles solares en
                 </HeroSectionText>
-            </HeroSectionTextContainer>
+            </HeroSectionContentContainer>
         </HeroSectionContainer>
     );
 

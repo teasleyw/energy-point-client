@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import Logo from "./Assets/Images/Logo.PNG"
 //COLOR PALLETTE
-export const primaryDark = "#3A416F"
+export const primaryDark = "#050D34FF"
 export const primaryLight = "#5d83C0"
-export const secondaryLight = "#10A3A2"
+export const secondaryLight = "#c0c5cc"
 export const tertiaryLight = "#B0B3B1"
 export const websiteBlack = "#111311"
 export const AccordionSection = styled.div`
