@@ -12,14 +12,35 @@ export const AccordionSection = styled.div`
     gap: 10px;
     padding-top: 50px;
     padding-right: 25px;
+    padding-left: 25px;
 `
 export const ContactContainer = styled.div`
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 2vh;
     height: 100%;
+`
+export const VideoContainer = styled.div`
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: ${primaryDark};
+    
+`
+export const Video = styled.video`
+    width: 50vw;
+    height: auto;
+`
+export const ContactUsText = styled.div`
+  font-size: 50px;
+  font-weight: 500;
+  border-bottom: ${secondaryLight} 1px solid;
 `
 export const InputContainer = styled.div`
     padding-top: 10px;
@@ -48,9 +69,10 @@ export const AboutUsTitle = styled.div`
 export const AboutUsDetails = styled.div`
     font-size: 25px;
     font-weight: 400;
-  
 `
-
+export const InstallationContent = styled.div`
+    padding-top: 20px;
+`
 export const Input = styled.input`
   color: ${websiteBlack};
   border: none;

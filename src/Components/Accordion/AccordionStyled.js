@@ -10,7 +10,7 @@ export const AccordionContainer = styled.div`
   border-radius: 10px;
 `
 export const AccordionContent = styled.div`
-      color: black;
+      color: ${primaryDark};
       height: 30px;
       display: flex;
       align-items: center;
@@ -21,9 +21,12 @@ export const AccordionContent = styled.div`
       font-family: Coolvetica, serif;
 `
 export const AccordionDetails = styled.div`
+  padding-right: 10px;
+  padding-left: 10px;
+  color: ${primaryDark};
   max-height: 0;
   overflow: hidden;
-  transition: all ease 0.4s;
+  transition: max-height ease 0.4s;
   &.active{
     max-height: 260px;
   }

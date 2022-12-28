@@ -12,13 +12,22 @@ export const InfoSectionContainer = styled.div`
     width: 100%;
     display: flex;
     flex-direction: row;
+    flex-grow: 1;
+    flex-basis: 50%;
+    flex-shrink: 1;
+      @media screen and (max-width: 960px) {
+        flex-direction: column;
+      }
+  & > * {
+    flex-grow: 0;
+    flex-basis: 50%;
+    flex-shrink: 0;
+  }
 `
 export const InfoSectionOne = styled.div`
-    width: 50%;
     order: ${props => props.inverse ? 0 : 1};
 `
 export const InfoSectionTwo = styled.div`
-    width: 50%;
     order: ${props => props.inverse ? 1 : 0};
     
     

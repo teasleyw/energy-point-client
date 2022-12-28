@@ -8,24 +8,25 @@ import {
     AboutUsDetails,
     AboutUsTitle,
     AccordionSection,
-    ContactContainer,
+    ContactContainer, ContactUsText,
     ImageContainer,
     Input,
-    InputContainer,
+    InputContainer, InstallationContent,
     Label,
-    TextArea
+    TextArea, Video, VideoContainer
 } from "./AppStyled";
 import React from "react";
 import AboutUsSection from "./Components/AboutUsSection/AboutUsSection";
 import Accordion from "./Components/Accordion/Accordion";
+import solarVideoOne from "./Assets/Videos/SolarVideoOne.mp4"
 
 function App() {
 
     const contactSectionText =
         <>
-            <div>
+            <ContactUsText>
                 Contact us for a quote:
-            </div>
+            </ContactUsText>
         </>
     const contactSectionInput =
         <>
@@ -53,9 +54,13 @@ function App() {
                 {loremIpsum}
             </AboutUsDetails>
         </AboutUsContainer>
+    const Installation =
+        <InstallationContent>
+            {loremIpsum}
+        </InstallationContent>
     const accordionSection =
         <AccordionSection>
-            <Accordion title={"Installation"} content={loremIpsum}/>
+            <Accordion title={"Installation"} content={Installation}/>
             <Accordion title={"Services"} content={loremIpsum}/>
             <Accordion title={"History"} content={loremIpsum}/>
             <Accordion title={"Leadership"} content={contactSectionInput}/>
@@ -66,7 +71,10 @@ function App() {
         <Header/>
         <HeroSection/>
         <InfoSection inverse={true} sectionOne={accordionSection} sectionTwo={AboutUsText}/>
-        <InfoSection inverse={true} sectionOne={contactSectionText} sectionTwo={contactSectionInput}/>
+        <VideoContainer>
+            <Video controls={true} src={solarVideoOne} ></Video>
+        </VideoContainer>
+        <InfoSection inverse={true} sectionOne={contactSectionInput} sectionTwo={contactSectionText}/>
         <InfoSection inverse={false} sectionTwo={<AboutUsSection/>} sectionOne={AboutUsText}/>
     </div>
 
