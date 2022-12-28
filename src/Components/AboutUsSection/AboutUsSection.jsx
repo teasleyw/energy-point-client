@@ -14,7 +14,7 @@ const AboutUsSection = () => {
                 }
             });
         });
-        observer.observe(documentRef.current);
+        if (documentRef.current) observer.observe(documentRef.current);
         return () => observer.disconnect()
     }, []);
     return(

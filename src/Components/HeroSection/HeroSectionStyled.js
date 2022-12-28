@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import heroImage from "../../Assets/Images/SolarPanelHeroImage.jpg"
-
+import Logo from "../../Assets/Images/Logo.PNG"
 export const HeroSectionContainer = styled.div`
   width: 100vw;
   height: 75vh;
@@ -9,6 +9,10 @@ export const HeroSectionContainer = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-direction: column;
   @media screen and (max-width: 960px) {
     width: 100vw;
     height: 25vh;
@@ -16,19 +20,30 @@ export const HeroSectionContainer = styled.div`
   }
 `
 export const HeroSectionTextContainer = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
+   
+  `
+export const HeroSectionImageContainer = styled.div`
+   height: 100%;
+   width: 100%;
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: right;
+   background-image: url(${Logo});
+   z-index: 999;
+   position: relative;
+    transition: all 1s ease-in-out;
+    transform: translateX(${props => (props.animate ? '0' : '20vw')});
+    opacity: ${props => props.animate ? '100%' : '0'}
   `
 export const HeroSectionText = styled.div`
+    width: 50%;
     text-align: center;
+    z-index: 0;
     color: white;
     font-family: Vogue,serif;
     font-size: 5rem;
     transition: all 1s ease-in-out;
-    transform: translateX(${props => (props.animate ? '0' : '-50vh')});
+    transform: translateY(${props => (props.animate ? '0' : '25vh')});
     opacity: ${props => props.animate ? '100%' : '0'}
   
 `
