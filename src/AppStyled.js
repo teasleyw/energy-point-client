@@ -71,7 +71,6 @@ export const AboutUsDetails = styled.div`
     font-weight: 400;
 `
 export const InstallationContent = styled.div`
-    padding-top: 20px;
 `
 export const Input = styled.input`
   color: ${websiteBlack};

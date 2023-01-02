@@ -6,7 +6,7 @@ const nameColor = "white"
 const titleColor = "rgb(180,242,242)"
 
 export const HeaderDiv = styled.div`
-  background: transparent;
+  background: ${primaryDark};
   height: 80px;
   width: 100%;
   display: flex;
@@ -47,6 +47,8 @@ export const TabContainer = styled.ul`
   display: flex;
   align-items: center;
   list-style: none;
+  position: relative;
+  z-index: -1;
   text-align: center;
   @media screen and (max-width: 960px) {
     padding-inline-start: 0;

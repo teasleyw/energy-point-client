@@ -31,7 +31,7 @@ const Accordion = (
                 }
             </AccordionContent>
             <AccordionDetails className={`${toggleAccordion ? "active" : ""}`}>
-                {content}
+                <div className="accordion-content-spacing">{content}</div>
             </AccordionDetails>
         </AccordionContainer>
     )

@@ -5,7 +5,7 @@ import {primaryLight, secondaryLight} from "../../AppStyled";
 function Header() {
     const [click, setClick] = useState(false);
     return (
-        <HeaderDiv>
+        <HeaderDiv click={click}>
             <HeaderContainer>
                 <Logo>  Energy Point</Logo>
                 <MobileIcon onClick = {()=> { setClick(!click) }}>
