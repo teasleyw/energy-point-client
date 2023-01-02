@@ -26,7 +26,7 @@ const HeroSection =() =>{
     return (
         <HeroSectionContainer id={"hero-section-id"}>
             <HeroSectionContentContainer>
-            <HeroSectionImageContainer  ref={documentRef} animate={isVisible} />
+            <HeroSectionImageContainer  ref={documentRef} animate={true} />
                 <HeroSectionText ref={documentRef} animate={isVisible}>
                     Venta e instalación de paneles solares en
                 </HeroSectionText>

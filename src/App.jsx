@@ -8,7 +8,7 @@ import {
     AboutUsDetails,
     AboutUsTitle,
     AccordionSection,
-    ContactContainer, ContactUsText,
+    ContactContainer, ContactUsSubText, ContactUsText,
     ImageContainer,
     Input,
     InputContainer, InstallationContent,
@@ -27,6 +27,9 @@ function App() {
             <ContactUsText>
                 Contact us for a quote:
             </ContactUsText>
+            <ContactUsSubText>
+                Contact Us with any Questions, or for a estimate on pricing. (If you add a picture of your electrical bill it will speed up the process)
+            </ContactUsSubText>
         </>
     const contactSectionInput =
         <>

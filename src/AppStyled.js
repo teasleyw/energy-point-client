@@ -36,11 +36,21 @@ export const VideoContainer = styled.div`
 export const Video = styled.video`
     width: 50vw;
     height: auto;
+  @media screen and (max-width: 960px) {
+    width: 90vw;
+  };
+  
 `
 export const ContactUsText = styled.div`
   font-size: 50px;
   font-weight: 500;
   border-bottom: ${secondaryLight} 1px solid;
+`
+export const ContactUsSubText = styled.div`
+  padding-top: 25px;
+  padding-left: 25px;
+  text-align: left;
+  font-size: 30px;
 `
 export const InputContainer = styled.div`
     padding-top: 10px;
@@ -60,6 +70,7 @@ export const InputContainer = styled.div`
 export const AboutUsContainer = styled.div`
     padding-left: 25px;
     padding-right: 25px;
+    
 `
 export const AboutUsTitle = styled.div`
     font-size: 60px;
@@ -69,6 +80,7 @@ export const AboutUsTitle = styled.div`
 export const AboutUsDetails = styled.div`
     font-size: 25px;
     font-weight: 400;
+    text-align: left;
 `
 export const InstallationContent = styled.div`
 `
