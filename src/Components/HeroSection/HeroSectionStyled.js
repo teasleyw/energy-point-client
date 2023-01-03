@@ -34,15 +34,14 @@ export const HeroSectionImageContainer = styled.div`
    background-position: right;
    align-self: flex-start;
    background-image: url(${Logo});
-   z-index: 10;
-   position: relative;
+    z-index: 10;
+    position: relative;
     transition: all 1s ease-in-out;
     transform: translateX(${props => (props.animate ? '0' : '20vw')});
     opacity: ${props => props.animate ? '100%' : '0'};
     @media screen and (max-width: 960px) {
-      order: 0;
+      height: 75%;
       background-position: center;
-      height: 100%;
     }
   `
 export const HeroSectionText = styled.div`

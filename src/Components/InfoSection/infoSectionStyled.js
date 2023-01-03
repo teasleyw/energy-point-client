@@ -12,9 +12,9 @@ export const InfoSectionContainer = styled.div`
     width: 100%;
     display: flex;
     flex-direction: row;
-    flex-grow: 1;
+    flex-grow: 0;
     flex-basis: 50%;
-    flex-shrink: 1;
+    flex-shrink: 0;
       @media screen and (max-width: 960px) {
         flex-direction: column;
       }

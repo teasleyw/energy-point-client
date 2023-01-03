@@ -116,9 +116,10 @@ export const Logo = styled.a`
   display: flex;
   align-items: center;
   color: ${titleColor};
-  font-family: "IceCaps", sans-serif; //Title Font;
-  font-size: 3rem;
+  font-family: LogoBold, sans-serif; //Title Font;
+  font-size: 2rem;
   text-shadow: 0 0 0.6em hsl(0 0% 100% / 0.5), 0 0 0.6em ${titleColor};
+  padding-bottom: 10px;
 
   &:hover {
     cursor: pointer;

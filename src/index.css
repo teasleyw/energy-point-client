@@ -20,6 +20,10 @@ code {
   font-family: 'Coolvetica';
   src: local("CoolVetica"), url("./Assets/Fonts/coolvetica/coolvetica-rg.otf") format("truetype")
 }
+@font-face {
+  font-family: 'LogoBold';
+  src: local("LogoBold"), url("./Assets/Fonts/LogoBold/Logo-Bold.otf") format("truetype")
+}
 body {
   margin: 0;
   font-family: Ford-Antenna-Regular, serif !important;

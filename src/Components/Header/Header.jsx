@@ -1,13 +1,13 @@
 import React, {useState} from "react";
 import {HeaderContainer, Logo, HeaderDiv, TabContainer, TabItem, MobileIcon} from "./HeaderStyled";
 import { FaBars, FaTimes } from 'react-icons/fa';
-import {primaryLight, secondaryLight} from "../../AppStyled";
+import {secondaryLight} from "../../AppStyled";
 function Header() {
     const [click, setClick] = useState(false);
     return (
         <HeaderDiv click={click}>
             <HeaderContainer>
-                <Logo>  Energy Point</Logo>
+                <Logo> Energy Point </Logo>
                 <MobileIcon onClick = {()=> { setClick(!click) }}>
                     {click ? <FaTimes color={secondaryLight} /> : <FaBars color={secondaryLight} />}
                 </MobileIcon>
