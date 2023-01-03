@@ -65,6 +65,10 @@ export const TabContainer = styled.ul`
   }
   
 `
+
+export const TabItemA = styled.a`
+    all: unset;
+`
 export const TabItem = styled.li`
   color: ${nameColor};
   font-family: "Aboreto", sans-serif; //Title Font;

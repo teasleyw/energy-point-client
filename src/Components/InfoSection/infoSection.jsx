@@ -5,11 +5,12 @@ const InfoSection = (
     {
         inverse = false,
         sectionOne= "",
-        sectionTwo = ""
+        sectionTwo = "",
+        id=""
     }
 ) => {
     return (
-        <InfoSectionContainer inverse={inverse}>
+        <InfoSectionContainer id={id} inverse={inverse}>
             <InfoSectionOne>
                 {sectionOne}
             </InfoSectionOne>

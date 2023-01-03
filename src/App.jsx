@@ -73,12 +73,12 @@ function App() {
     <div className="App">
         <Header/>
         <HeroSection/>
-        <InfoSection inverse={true} sectionOne={accordionSection} sectionTwo={AboutUsText}/>
-        <VideoContainer>
+        <InfoSection id="servicesId" inverse={true} sectionOne={accordionSection} sectionTwo={AboutUsText}/>
+        <VideoContainer id="videoId">
             <Video controls={true} src={solarVideoOne} ></Video>
         </VideoContainer>
-        <InfoSection inverse={true} sectionOne={contactSectionInput} sectionTwo={contactSectionText}/>
-        <InfoSection inverse={false} sectionTwo={<AboutUsSection/>} sectionOne={AboutUsText}/>
+        <InfoSection id="contactUsId" inverse={true} sectionOne={contactSectionInput} sectionTwo={contactSectionText}/>
+        <InfoSection id="aboutUsId" inverse={false} sectionTwo={<AboutUsSection/>} sectionOne={AboutUsText}/>
     </div>
 
   );

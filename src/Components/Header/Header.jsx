@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {HeaderContainer, Logo, HeaderDiv, TabContainer, TabItem, MobileIcon} from "./HeaderStyled";
+import {HeaderContainer, Logo, HeaderDiv, TabContainer, TabItem, MobileIcon, TabItemA} from "./HeaderStyled";
 import { FaBars, FaTimes } from 'react-icons/fa';
 import {secondaryLight} from "../../AppStyled";
 function Header() {
@@ -12,9 +12,9 @@ function Header() {
                     {click ? <FaTimes color={secondaryLight} /> : <FaBars color={secondaryLight} />}
                 </MobileIcon>
                 <TabContainer onClick={()=> { setClick(!click) }} click={click}>
-                    <TabItem> Services          </TabItem>
-                    <TabItem> About</TabItem>
-                    <TabItem> Contact Us</TabItem>
+                    <TabItem> <TabItemA href="#servicesId">Services</TabItemA>        </TabItem>
+                    <TabItem> <TabItemA href="#contactUsId">Contact Us</TabItemA></TabItem>
+                    <TabItem><TabItemA href="#aboutUsId">About Us</TabItemA></TabItem>
                 </TabContainer>
             </HeaderContainer>
         </HeaderDiv>
