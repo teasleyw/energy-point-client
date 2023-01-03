@@ -14,7 +14,7 @@ function Header() {
                 <TabContainer onClick={()=> { setClick(!click) }} click={click}>
                     <TabItem> <TabItemA href="#servicesId">Services</TabItemA>        </TabItem>
                     <TabItem> <TabItemA href="#contactUsId">Contact Us</TabItemA></TabItem>
-                    <TabItem><TabItemA href="#aboutUsId">About Us</TabItemA></TabItem>
+                    <TabItem> <TabItemA href="#aboutUsId">About Us</TabItemA></TabItem>
                 </TabContainer>
             </HeaderContainer>
         </HeaderDiv>

@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import {primaryDark,secondaryLight} from "../../AppStyled";
 
 export const InfoSectionContainer = styled.div`
+    scroll-margin: 80px;
     background-color: ${props => props.inverse ? primaryDark : secondaryLight};
     color: ${props => props.inverse ? 'white' : 'black'};
     min-height: 50vh;

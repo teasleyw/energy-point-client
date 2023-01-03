@@ -32,9 +32,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow: auto;
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 html {
+
   overflow: hidden;
   position: relative;
   height: 100%;
