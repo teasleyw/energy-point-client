@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import heroImage from "../../Assets/Images/SolarPanelHeroImage.jpg"
 import Logo from "../../Assets/Images/Logo.PNG"
+import Arrow from "../../Assets/Images/chevron-down-solid.svg"
 import {secondaryLight} from "../../AppStyled";
 export const HeroSectionContainer = styled.div`
   width: 100vw;
@@ -24,6 +25,10 @@ export const HeroSectionContentContainer = styled.div`
   justify-content: flex-start;
   align-items: flex-end;
   flex-direction: row;
+  @media screen and (max-width: 960px) {
+   flex-direction: column;
+  }
+  
 `
 export const HeroSectionImageContainer = styled.div`
    order: 2;
@@ -44,6 +49,12 @@ export const HeroSectionImageContainer = styled.div`
       background-position: center;
     }
   `
+export const MobileDownArrow = styled.div`
+    order: 3;
+    width: 100%;
+    align-content: center;
+  
+`
 export const HeroSectionText = styled.div`
     width: 100%;
     text-align: center;

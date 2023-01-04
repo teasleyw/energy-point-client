@@ -1,10 +1,13 @@
 import React, {useEffect, useRef, useState} from 'react';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faCircleChevronDown} from "@fortawesome/free-solid-svg-icons";
 import {
     HeroSectionContainer,
     HeroSectionContentContainer,
     HeroSectionImageContainer,
-    HeroSectionText,
+    HeroSectionText, MobileDownArrow,
 } from "./HeroSectionStyled";
+import {TabItemA} from "../Header/HeaderStyled";
 
 const HeroSection =() =>{
     const [isVisible, setVisible] = useState(false);
@@ -29,6 +32,9 @@ const HeroSection =() =>{
                 <HeroSectionText animate={isVisible}>
                     Venta e instalación de paneles solares en
                 </HeroSectionText>
+                <MobileDownArrow >
+                    <TabItemA href={"#servicesId"}> <FontAwesomeIcon size="4x" icon={faCircleChevronDown} color="white"/> </TabItemA>
+                </MobileDownArrow>
             </HeroSectionContentContainer>
         </HeroSectionContainer>
     );
